@@ -1,5 +1,6 @@
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+import { asset } from "@/lib/utils";
 
 export default function LogoCloud() {
   return (
@@ -12,7 +13,7 @@ export default function LogoCloud() {
               <div className="flex items-center">
                 <img
                   className="mx-auto h-8 w-fit dark:invert"
-                  src="/logos/git.svg"
+                  src={asset("/logos/git.svg")}
                   alt="Git Logo"
                   height="20"
                   width="auto"
@@ -21,14 +22,14 @@ export default function LogoCloud() {
               <div className="flex items-center gap-2">
                 <img
                   className="mx-auto h-8 w-fit dark:invert"
-                  src="/logos/github.svg"
+                  src={asset("/logos/github.svg")}
                   alt="GitHub Logo"
                   height="20"
                   width="auto"
                 />
                 <img
                   className="mx-auto h-8 w-fit dark:invert"
-                  src="/logos/github.png"
+                  src={asset("/logos/github.png")}
                   alt="GitHub Logo"
                   height="20"
                   width="auto"
@@ -37,7 +38,7 @@ export default function LogoCloud() {
               <div className="flex items-center gap-2">
                 <img
                   className="mx-auto h-8 w-fit dark:invert"
-                  src="/logos/tslogo.svg"
+                  src={asset("/logos/tslogo.svg")}
                   alt="TypeScript Logo"
                   height="20"
                   width="auto"
@@ -49,7 +50,7 @@ export default function LogoCloud() {
               <div className="flex items-center">
                 <img
                   className="mx-auto h-14 w-fit dark:invert"
-                  src="/logos/java.svg"
+                  src={asset("/logos/java.svg")}
                   alt="Java Logo"
                   height="20"
                   width="auto"
@@ -58,7 +59,7 @@ export default function LogoCloud() {
               <div className="flex items-center">
                 <img
                   className="mx-auto h-8 w-fit dark:invert"
-                  src="/logos/nodejs.svg"
+                  src={asset("/logos/nodejs.svg")}
                   alt="Node.js Logo"
                   height="20"
                   width="auto"
@@ -67,7 +68,7 @@ export default function LogoCloud() {
               <div className="flex items-center gap-2">
                 <img
                   className="mx-auto h-8 w-fit dark:invert"
-                  src="/logos/react.svg"
+                  src={asset("/logos/react.svg")}
                   alt="React Logo"
                   height="20"
                   width="auto"
@@ -79,14 +80,14 @@ export default function LogoCloud() {
               <div className="flex items-center gap-2">
                 <img
                   className="mx-auto h-8 w-fit dark:invert"
-                  src="/logos/nextlogo.svg"
+                  src={asset("/logos/nextlogo.svg")}
                   alt="Next.js Logo"
                   height="20"
                   width="auto"
                 />
                 <img
                   className="mx-auto h-5 w-fit dark:invert"
-                  src="/logos/next.svg"
+                  src={asset("/logos/next.svg")}
                   alt="Next.js Logo"
                   height="20"
                   width="auto"
@@ -95,7 +96,7 @@ export default function LogoCloud() {
               <div className="flex items-center">
                 <img
                   className="mx-auto h-12 w-fit dark:invert"
-                  src="/logos/python.svg"
+                  src={asset("/logos/python.svg")}
                   alt="Python Logo"
                   height="20"
                   width="auto"
@@ -104,7 +105,7 @@ export default function LogoCloud() {
               <div className="flex items-center">
                 <img
                   className="mx-auto h-8 w-fit dark:invert"
-                  src="/logos/docker.svg"
+                  src={asset("/logos/docker.svg")}
                   alt="Docker Logo"
                   height="20"
                   width="auto"
@@ -113,7 +114,7 @@ export default function LogoCloud() {
               <div className="flex items-center">
                 <img
                   className="mx-auto h-8 w-fit dark:invert"
-                  src="/logos/flutter.svg"
+                  src={asset("/logos/flutter.svg")}
                   alt="Flutter Logo"
                   height="20"
                   width="auto"
@@ -122,7 +123,7 @@ export default function LogoCloud() {
               <div className="flex items-center">
                 <img
                   className="mx-auto h-14 w-fit dark:invert"
-                  src="/logos/aws.svg"
+                  src={asset("/logos/aws.svg")}
                   alt="AWS Logo"
                   height="20"
                   width="auto"

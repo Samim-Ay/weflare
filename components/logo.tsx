@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { asset } from "@/lib/utils";
 
 export function Logo({ className }: { className?: string }) {
   return (
     <div className={`flex items-center gap-2${className}`}>
       <Image
-        src="/WeflareIconDark.png"
+        src={asset("/WeflareIconDark.png")}
         alt="Weflare Logo"
         width={28}
         height={28}

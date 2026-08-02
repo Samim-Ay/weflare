@@ -5,6 +5,7 @@ import { AnimatedGroup } from "@/components/ui/animated-group";
 import LogoCloud from "./logo-cloud";
 import InteractiveScrollSection from "./interactiveScrollSection";
 import Image from "next/image";
+import { asset } from "@/lib/utils";
 
 const transitionVariants = {
   item: {
@@ -164,7 +165,7 @@ export default function HeroSection() {
               {/* 1. Oben Links (Klein) */}
               <div className="md:col-span-4 h-80 md:h-100 relative rounded-lg overflow-hidden bg-black group">
                 <img
-                  src="/landingpagevideos/gif.gif"
+                  src={asset("/landingpagevideos/gif.gif")}
                   alt="Animation"
                   className="absolute inset-0 w-full h-full object-cover duration-500 group-hover:scale-105"
                 />
@@ -179,7 +180,7 @@ export default function HeroSection() {
               {/* 2. Oben Rechts (Querformat / Groß) */}
               <div className="md:col-span-8 h-80 md:h-100 relative rounded-lg overflow-hidden bg-black group">
                 <video
-                  src="/landingpagevideos/PhonePulse.mp4"
+                  src={asset("/landingpagevideos/PhonePulse.mp4")}
                   autoPlay
                   loop
                   muted
@@ -198,7 +199,7 @@ export default function HeroSection() {
               {/* 3. Unten Links (Querformat / Groß) */}
               <div className="md:col-span-8 h-80 md:h-100 relative rounded-lg overflow-hidden bg-black group">
                 <video
-                  src="/landingpagevideos/Rotate.mp4"
+                  src={asset("/landingpagevideos/Rotate.mp4")}
                   autoPlay
                   loop
                   muted
@@ -216,7 +217,7 @@ export default function HeroSection() {
               {/* 4. Unten Rechts (Klein) */}
               <div className="md:col-span-4 h-80 md:h-100 relative rounded-lg overflow-hidden bg-black group">
                 <video
-                  src="/landingpagevideos/AIParticleVideo.mp4"
+                  src={asset("/landingpagevideos/AIParticleVideo.mp4")}
                   autoPlay
                   loop
                   muted

@@ -18,6 +18,7 @@ import {
   Database,
 } from "lucide-react";
 import Image from "next/image";
+import { asset } from "@/lib/utils";
 
 type Project = {
   id: string;
@@ -287,7 +288,7 @@ const ProjectCard = ({
       >
         <div className="relative rounded-2xl overflow-hidden shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
           <img
-            src={project.image}
+            src={asset(project.image)}
             alt={project.title}
             className="w-full h-auto object-cover"
           />
@@ -323,7 +324,7 @@ const ProjectCard = ({
               <div className="tech-icon w-8 h-8 relative flex items-center justify-center transition-transform group-hover:scale-110">
                 {tech.iconPath ? (
                   <img
-                    src={tech.iconPath}
+                    src={asset(tech.iconPath)}
                     alt={tech.name}
                     className="w-full h-full object-contain"
                   />
