@@ -9,9 +9,9 @@ import BorderBeamCard from "./boarderbeam";
 // Placeholder for translation function if not available
 const t = (key: string) => {
   const translations: Record<string, string> = {
-    "form.message": "Message",
-    "form.messagePlaceholder": "Your message...",
-    "form.submit": "Submit",
+    "form.message": "Nachricht",
+    "form.messagePlaceholder": "Ihre Nachricht...",
+    "form.submit": "Absenden",
   };
   return translations[key] || key;
 };
@@ -55,7 +55,7 @@ export default function ContactSection() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={transitionVariants.container}
-            className="mx-auto max-w-4xl lg:mt-16"
+            className="mx-auto max-w-4xl"
           >
             <motion.h2
               variants={transitionVariants.item}
@@ -78,7 +78,7 @@ export default function ContactSection() {
                     <Phone className="size-10" />
                   </div>
                   <div className="flex-1 space-y-1">
-                    <h3 className="text-lg font-medium">Phone</h3>
+                    <h3 className="text-lg font-medium">Telefon</h3>
                     <p className="text-sm text-muted-foreground">
                       +212 6 59 59 59 59
                     </p>
@@ -91,9 +91,9 @@ export default function ContactSection() {
                     <Mail className="size-10" />
                   </div>
                   <div className="flex-1 space-y-1">
-                    <h3 className="text-lg font-medium">Email</h3>
+                    <h3 className="text-lg font-medium">E-Mail</h3>
                     <p className="text-sm text-muted-foreground">
-                      devsay@gmail.com
+                      weflare@gmail.com
                     </p>
                   </div>
                 </div>
@@ -128,17 +128,17 @@ export default function ContactSection() {
               >
                 <div className="px-6 overflow-hidden">
                   <div className="mb-4 text-2xl font-semibold">
-                    Contact Form
+                    Kontaktformular
                   </div>
                   <form className="space-y-6">
                     <div className="w-full space-y-2">
                       <label htmlFor="username" className="text-sm font-medium">
-                        Full Name
+                        Vollständiger Name
                       </label>
                       <input
                         id="username"
                         type="text"
-                        placeholder="Full Name"
+                        placeholder="Vollständiger Name"
                         className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-xs outline-none md:text-sm h-10 focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
                       />
                     </div>
@@ -148,12 +148,12 @@ export default function ContactSection() {
                         htmlFor="useremail"
                         className="text-sm font-medium"
                       >
-                        Email
+                        E-Mail
                       </label>
                       <input
                         id="useremail"
                         type="email"
-                        placeholder="Email"
+                        placeholder="E-Mail"
                         className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-xs outline-none md:text-sm h-10 focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
                       />
                     </div>
@@ -212,7 +212,7 @@ export default function ContactSection() {
                         disabled
                         className="relative overflow-hidden shine-effect inline-flex shrink-0 items-center justify-center gap-2 font-medium transition-all outline-none focus-visible:ring-[3px] bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 w-full rounded-lg text-base shadow-sm"
                       >
-                        Submit (Disabled)
+                        Absenden (deaktiviert)
                       </Button>
                     </>
                   </form>

@@ -1,17 +1,15 @@
 import type { NextConfig } from "next";
 
+const repoName = "devsay";
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
-  /* config options here */
-    async headers() {
-    return [
-      {
-        source: "/assets/:all*",
-        headers: [
-          { key: "Cache-Control", value: "no-store" }
-        ]
-      }
-    ];
+  output: "export",
+  images: {
+    unoptimized: true,
   },
+  basePath: isProd ? `/${repoName}` : "",
+  assetPrefix: isProd ? `/${repoName}/` : "",
 };
 
 export default nextConfig;

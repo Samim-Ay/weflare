@@ -7,7 +7,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
-  { name: "Home", href: "/" },
+  { name: "Startseite", href: "/" },
   { name: "Über uns", href: "/about" },
   { name: "Leistungen", href: "/services" },
   { name: "Projekte", href: "/projects" },
@@ -41,7 +41,7 @@ export const HeroHeader = () => {
             <div className="flex w-full justify-between lg:w-auto">
               <Link
                 href="/"
-                aria-label="Home"
+                aria-label="Startseite"
                 className="flex items-center space-x-2"
               >
                 <Logo />
@@ -49,7 +49,7 @@ export const HeroHeader = () => {
 
               <button
                 onClick={() => setMenuState(!menuState)}
-                aria-label={menuState == true ? "Close Menu" : "Open Menu"}
+                aria-label={menuState == true ? "Menü schließen" : "Menü öffnen"}
                 className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
               >
                 <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 duration-200" />
@@ -93,7 +93,7 @@ export const HeroHeader = () => {
                   size="sm"
                   className={cn("lg:inline-flex rounded-full")}
                 >
-                  <Link href="#">
+                  <Link href="/contact">
                     <span>Jetzt Kontakt aufnehmen</span>
                   </Link>
                 </Button>

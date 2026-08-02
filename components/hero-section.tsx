@@ -53,7 +53,7 @@ export default function HeroSection() {
                   as="h1"
                   className="mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]"
                 >
-                  {`Build smart.\nLaunch safe.`}
+                  {`Ihre Vision Unsere Software`}
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -63,7 +63,7 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  Bei Devsay verbinden wir modernste Softwareentwicklung mit
+                  Bei Weflare verbinden wir modernste Softwareentwicklung mit
                   strategischem Know-how. Wir liefern nicht nur funktionale,
                   effiziente Lösungen – wir sorgen dafür, dass sie von Anfang an
                   nachhaltig, skalierbar und zukunftssicher sind.
@@ -92,7 +92,7 @@ export default function HeroSection() {
                       size="lg"
                       className="rounded-xl px-5 text-base"
                     >
-                      <Link href="#link">
+                      <Link href="/contact">
                         <span className="text-nowrap">
                           Jetzt Kontakt aufnehmen
                         </span>
@@ -120,7 +120,7 @@ export default function HeroSection() {
                 <h2 className="text-center text-4xl font-bold text-foreground/50">
                   Wir entwickeln die digitale Zukunft
                 </h2>
-                <LogoCloud />
+   
               </div>
             </AnimatedGroup>
 
@@ -149,7 +149,7 @@ export default function HeroSection() {
                 Grenzenlose Effizienz für digitale Visionäre
               </h2>
               <p className="text-lg text-gray-900 max-w-3xl mx-auto">
-                Devsay ist mehr als ein Softwareunternehmen – wir sind der
+                Weflare ist mehr als ein Softwareunternehmen – wir sind der
                 treibende Motor digitaler Exzellenz. Mit klarem Fokus auf
                 Struktur, Transparenz und echte Zusammenarbeit bringen wir
                 komplexe Ideen in eine skalierbare Form. Für Teams, die nicht
