@@ -38,3 +38,11 @@ There is no test suite configured in this repo.
 **Client vs. server components**: Most interactive section components (header, contact form, animated sections) are explicitly `"use client"` due to state, effects, or motion. Keep new interactive components marked accordingly; default to server components where no interactivity is needed.
 
 **Forms**: `react-hook-form` + `zod` (`@hookform/resolvers`) and shadcn's `components/ui/form.tsx` are available as dependencies for form handling. Note the current contact form (`components/contact-section.tsx`) is a static/disabled placeholder (no submit handler wired up yet).
+
+## Git workflow authorization
+
+You are authorized to `git commit` and `git push` to `origin main` automatically, without asking for confirmation first, as long as:
+- The change set is something the user asked for or is a direct, expected consequence of the current task (e.g. deploying a feature, fixing a build).
+- You are not force-pushing, rewriting history, or touching any branch other than `main`.
+
+Still confirm before any destructive or history-rewriting operation (force-push, reset --hard, branch deletion, amending pushed commits).
